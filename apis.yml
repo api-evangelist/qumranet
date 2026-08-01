@@ -1,8 +1,26 @@
 aid: qumranet
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qumranet.png
 name: Qumranet
-description: 'Qumranet is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Qumranet was an Israeli software company that developed the Kernel-based
+  Virtual Machine (KVM) hypervisor and the SPICE remote-desktop protocol, along with
+  the SolidICE virtual desktop infrastructure product. It was acquired by Red Hat
+  in September 2008, after which its technologies were folded into Red Hat''s
+  virtualization portfolio (Red Hat Enterprise Virtualization / RHEV) and contributed
+  upstream to the Linux kernel and open-source communities. Qumranet no longer exists
+  as an independent company: the qumranet.com domain now issues a permanent (301)
+  redirect to Red Hat''s enterprise virtualization page, and there is no independent
+  Qumranet developer program, API surface, or documentation to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/qumranet/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,22 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: redhat
+x-acquired-date: '2008-09'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Virtualization
+- KVM
+- SPICE
+- Hypervisor
+- Virtual Desktop Infrastructure
+- Acquired
+- Red Hat
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,12 @@ maintainers:
 common:
 - type: Website
   url: https://qumranet.com
+- type: Acquirer
+  url: https://www.redhat.com/en/technologies/virtualization/enterprise-virtualization
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: 'qumranet.com 301-redirects to Red Hat enterprise virtualization; Qumranet
+    acquired by Red Hat 2008-09; no independent API surface exists to enrich.'
